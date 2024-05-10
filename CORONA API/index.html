@@ -36,7 +36,7 @@
         const datafetch = async () => {
             let result = await fetch('https://api.rootnet.in/covid19-in/stats/latest')
             result = await result.json();
-            console.log(result.data.regional)
+            // console.log(result.data.regional)
             result.data.regional.map((el, i) => {
                 tbody.innerHTML+=`
                 <tr>
